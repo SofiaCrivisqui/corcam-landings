@@ -1,0 +1,13 @@
+TIPOGRAFIAS OFICIALES VOLKSWAGEN
+
+Colocar en esta carpeta los archivos autorizados entregados por Volkswagen o CORCAM:
+
+- VWHead-Regular.woff2 o VWHead-Regular.otf
+- vwtext-regular.woff2
+- vwtext-bold.woff2
+
+La hoja assets/styles.css ya contiene las declaraciones @font-face y comenzará a utilizarlos automáticamente.
+
+Mientras esos archivos no estén presentes, el proyecto utiliza Arial/Helvetica como tipografías de respaldo.
+
+No se incluyen los archivos tipográficos propietarios dentro de este paquete porque deben ser suministrados con su licencia de uso correspondiente.
