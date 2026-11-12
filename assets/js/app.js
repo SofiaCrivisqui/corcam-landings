@@ -275,6 +275,103 @@
   }
 
   /* ========================================================
+     IMAGEN SEGÚN VARIANTE TÉCNICA
+
+     Este bloque se ejecuta solamente en las landings que
+     tienen más de una imagen técnica configurada.
+     ======================================================== */
+
+  const technicalModelImage = $("#technical-model-image");
+
+  const technicalImagesByLanding = {
+    "meteor-28460-29520": {
+      0: {
+        src: "../assets/images/meteor-28460-29520/meteor-28460.webp",
+        alt: "Volkswagen Meteor 28.460",
+      },
+      1: {
+        src: "../assets/images/meteor-28460-29520/meteor-29520.webp",
+        alt: "Volkswagen Meteor 29.520",
+      },
+    },
+
+    "constellation-19330-19360": {
+      0: {
+        src: "../assets/images/constellation-19330-19360/constellation-19330.webp",
+        alt: "Volkswagen Constellation 19.330",
+      },
+      1: {
+        src: "../assets/images/constellation-19330-19360/constellation-19360.webp",
+        alt: "Volkswagen Constellation 19.360",
+      },
+    },
+  };
+
+  const technicalImages =
+    technicalImagesByLanding[config.model];
+
+  const updateTechnicalImage = (variantIndex) => {
+    if (!technicalModelImage || !technicalImages) {
+      return;
+    }
+
+    const selectedImage =
+      technicalImages[variantIndex] || technicalImages[0];
+
+    if (!selectedImage) {
+      return;
+    }
+
+    technicalModelImage.classList.add("is-changing");
+
+    const preloadImage = new Image();
+
+    preloadImage.onload = () => {
+      technicalModelImage.src = selectedImage.src;
+      technicalModelImage.alt = selectedImage.alt;
+
+      requestAnimationFrame(() => {
+        technicalModelImage.classList.remove(
+          "is-changing",
+        );
+      });
+    };
+
+    preloadImage.onerror = () => {
+      technicalModelImage.classList.remove(
+        "is-changing",
+      );
+    };
+
+    preloadImage.src = selectedImage.src;
+  };
+
+  if (
+    technicalTabs &&
+    technicalModelImage &&
+    technicalImages
+  ) {
+    updateTechnicalImage(0);
+
+    technicalTabs.addEventListener(
+      "click",
+      (event) => {
+        const button = event.target.closest(
+          "[data-variant]",
+        );
+
+        if (!button) {
+          return;
+        }
+
+        updateTechnicalImage(
+          Number(button.dataset.variant),
+        );
+      },
+    );
+  }
+
+  /* ========================================================
      MENÚ DE MODELOS
      ======================================================== */
 
