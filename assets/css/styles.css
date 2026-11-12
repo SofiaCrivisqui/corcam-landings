@@ -3229,3 +3229,107 @@ svg {
     font-size: 10px;
   }
 }
+
+/* =========================================================
+   OTRA APLICACIÓN
+   ========================================================= */
+
+.application-other {
+  width: 100%;
+  margin-top: 24px;
+  padding: 28px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  border: 1px solid #d6e0e8;
+  border-left: 4px solid var(--vw-cyan);
+  background: #f4f7fa;
+}
+
+.application-other-copy {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.application-other-icon {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--vw-blue);
+  border: 1px solid var(--vw-blue);
+  border-radius: 50%;
+
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.application-other h3 {
+  margin: 0 0 7px;
+  color: var(--vw-navy);
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.application-other p {
+  max-width: 630px;
+  margin: 0;
+  color: #5d6670;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.application-other-button {
+  min-width: 250px;
+  flex: 0 0 auto;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .application-other {
+    margin-top: 16px;
+    padding: 22px 20px;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .application-other-copy {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .application-other-icon {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+    font-size: 24px;
+  }
+
+  .application-other h3 {
+    font-size: 18px;
+  }
+
+  .application-other p {
+    font-size: 13px;
+  }
+
+  .application-other-button {
+    width: 100%;
+    min-width: 0;
+  }
+}

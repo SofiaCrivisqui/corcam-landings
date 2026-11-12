@@ -201,30 +201,160 @@
       <div class="trust-bar"><span><i data-icon="truck"></i>Entrega coordinada</span><span><i data-icon="tools"></i>Asesoramiento personalizado</span><span><i data-icon="shield"></i>Respaldo oficial</span></div>
     </section>
 
-    <section class="applications-section" id="aplicaciones"><div class="section-shell"><p class="eyebrow eyebrow-light">Aplicaciones</p><h2>Un camión.<br>Distintas formas <em>de hacerlo rendir.</em></h2><p>Descubrí cómo puede adaptarse a la operación de tu empresa.</p><div class="application-grid">
-          <button class="application-card" data-application="Distribución">
-           <img
-  src="../assets/images/constellation-17280/aplicacion-distribucion.webp"
-  alt="Volkswagen Constellation 17.280 para distribución regional"
+    <section
+  class="applications-section"
+  id="aplicaciones"
 >
->
-            <div><div class="app-head"><span class="app-icon" data-icon="box"></span><h3>Distribución</h3></div><p>Carga regional y media distancia.</p><b>Consultar esta aplicación <span>→</span></b></div>
-          </button>
-          <button class="application-card" data-application="Semirremolque">
-            <img
-  src="../assets/images/constellation-17280/aplicacion-refrigerado.webp"
-  alt="Volkswagen Constellation 17.280 para transporte refrigerado"
->
-            <div><div class="app-head"><span class="app-icon" data-icon="truck"></span><h3>Semirremolque</h3></div><p>Configuración para transporte.</p><b>Consultar esta aplicación <span>→</span></b></div>
-          </button>
-          <button class="application-card" data-application="Industria">
-           <img
-  src="../assets/images/constellation-17280/aplicacion-industria.webp"
-  alt="Volkswagen Constellation 17.280 para aplicaciones industriales"
->
-            <div><div class="app-head"><span class="app-icon" data-icon="gear"></span><h3>Industria</h3></div><p>Adaptación a distintos carrozados.</p><b>Consultar esta aplicación <span>→</span></b></div>
-          </button>
-      </div></div></section>
+  <div class="section-shell">
+
+    <p class="eyebrow eyebrow-light">
+      Aplicaciones
+    </p>
+
+    <h2>
+      Un camión.<br>
+      Distintas formas
+      <em>de hacerlo rendir.</em>
+    </h2>
+
+    <p>
+      Descubrí cómo puede adaptarse a la operación de tu empresa.
+    </p>
+
+    <div class="application-grid">
+
+      <button
+        class="application-card"
+        type="button"
+        data-application="Distribución"
+      >
+        <img
+          src="../assets/images/constellation-17280/aplicacion-distribucion.webp"
+          alt="Volkswagen Constellation 17.280 para distribución regional"
+        >
+
+        <div>
+          <div class="app-head">
+            <span
+              class="app-icon"
+              data-icon="box"
+            ></span>
+
+            <h3>Distribución</h3>
+          </div>
+
+          <p>
+            Carga regional y media distancia.
+          </p>
+
+          <b>
+            Consultar esta aplicación
+            <span>→</span>
+          </b>
+        </div>
+      </button>
+
+      <button
+        class="application-card"
+        type="button"
+        data-application="Semirremolque"
+      >
+        <img
+          src="../assets/images/constellation-17280/aplicacion-refrigerado.webp"
+          alt="Volkswagen Constellation 17.280 para semirremolque"
+        >
+
+        <div>
+          <div class="app-head">
+            <span
+              class="app-icon"
+              data-icon="truck"
+            ></span>
+
+            <h3>Semirremolque</h3>
+          </div>
+
+          <p>
+            Configuración para transporte.
+          </p>
+
+          <b>
+            Consultar esta aplicación
+            <span>→</span>
+          </b>
+        </div>
+      </button>
+
+      <button
+        class="application-card"
+        type="button"
+        data-application="Industria"
+      >
+        <img
+          src="../assets/images/constellation-17280/aplicacion-industria.webp"
+          alt="Volkswagen Constellation 17.280 para aplicaciones industriales"
+        >
+
+        <div>
+          <div class="app-head">
+            <span
+              class="app-icon"
+              data-icon="gear"
+            ></span>
+
+            <h3>Industria</h3>
+          </div>
+
+          <p>
+            Adaptación a distintos carrozados.
+          </p>
+
+          <b>
+            Consultar esta aplicación
+            <span>→</span>
+          </b>
+        </div>
+      </button>
+
+    </div>
+
+    <!-- OTRA APLICACIÓN: VA DESPUÉS DE application-grid -->
+    <div class="application-other">
+
+      <div class="application-other-copy">
+
+        <span
+          class="application-other-icon"
+          aria-hidden="true"
+        >
+          +
+        </span>
+
+        <div>
+          <h3>¿Otra aplicación?</h3>
+
+          <p>
+            Contanos qué necesitás transportar y te ayudamos a encontrar
+            la configuración adecuada.
+          </p>
+        </div>
+
+      </div>
+
+      <a
+        class="button button-primary application-other-button"
+        href="#contacto"
+        data-application="Otros"
+        data-track="application_click"
+      >
+        Consultar otra aplicación
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
 
     <section class="cabin-section" id="cabina">
 
@@ -474,35 +604,38 @@
           </select>
         </label>
 
-        <label>
-          <span>Aplicación</span>
-
-          <select name="aplicacion" id="form-application">
-            <option value="">Aplicación</option>
-            <option value="Distribución">Distribución</option>
-            <option value="Semirremolque">Semirremolque</option>
-            <option value="Industria">Industria</option>
-          </select>
-        </label>
+    
 
       </div>
 
       <label>
-        <span>Financiación de interés</span>
+  <span>Financiación de interés</span>
 
-        <select name="financiacion" id="form-finance">
-          <option value="">Financiación de interés</option>
-          <option value="Financiación bancaria">
-            Financiación bancaria
-          </option>
-          <option value="Financiación CORCAM">
-            Financiación CORCAM
-          </option>
-          <option value="Leasing">
-            Leasing
-          </option>
-        </select>
-      </label>
+  <select
+    name="financiacion"
+    id="form-finance"
+  >
+    <option value="">
+      Financiación de interés
+    </option>
+
+    <option value="Financiación bancaria">
+      Financiación bancaria
+    </option>
+
+    <option value="Financiación CORCAM">
+      Financiación CORCAM
+    </option>
+
+    <option value="Leasing">
+      Leasing
+    </option>
+
+    <option value="Otros">
+      Otros
+    </option>
+  </select>
+</label>
 
       <label>
         <span>¿Qué necesitás transportar?</span>

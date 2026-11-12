@@ -219,29 +219,160 @@
       <div class="trust-bar"><span><i data-icon="truck"></i>Entrega coordinada</span><span><i data-icon="tools"></i>Asesoramiento personalizado</span><span><i data-icon="shield"></i>Respaldo oficial</span></div>
     </section>
 
-    <section class="applications-section" id="aplicaciones"><div class="section-shell"><p class="eyebrow eyebrow-light">Aplicaciones</p><h2>Un camión.<br>Distintas formas <em>de hacerlo rendir.</em></h2><p>Descubrí cómo puede adaptarse a la operación de tu empresa.</p><div class="application-grid">
-          <button class="application-card" data-application="Granos">
-           <img
-  src="../assets/images/constellation-25360-6x2/aplicacion-construccion.webp"
-  alt="Volkswagen Constellation 25.360 6x2 para construcción"
+ <section
+  class="applications-section"
+  id="aplicaciones"
 >
-            <div><div class="app-head"><span class="app-icon" data-icon="field"></span><h3>Construcción</h3></div><p>Robustez para obras, canteras y terrenos exigentes.</p><b>Consultar esta aplicación <span>→</span></b></div>
-          </button>
-          <button class="application-card" data-application="Áridos">
-            <img
-  src="../assets/images/constellation-25360-6x2/aplicacion-industria.webp"
-  alt="Volkswagen Constellation 25.360 6x2 para aplicaciones industriales"
->
-            <div><div class="app-head"><span class="app-icon" data-icon="weight"></span><h3>Industria</h3></div><p>Configuración adaptable a diferentes operaciones industriales.</p><b>Consultar esta aplicación <span>→</span></b></div>
-          </button>
-          <button class="application-card" data-application="Carga general">
-           <img
-  src="../assets/images/constellation-25360-6x2/aplicacion-carga-pesada.webp"
-  alt="Volkswagen Constellation 25.360 6x2 para transporte de carga pesada"
->
-            <div><div class="app-head"><span class="app-icon" data-icon="box"></span><h3>Carga pesada</h3></div><p>Capacidad y rendimiento para el transporte de grandes cargas.</p><b>Consultar esta aplicación <span>→</span></b></div>
-          </button>
-      </div></div></section>
+  <div class="section-shell">
+
+    <p class="eyebrow eyebrow-light">
+      Aplicaciones
+    </p>
+
+    <h2>
+      Un camión.<br>
+      Distintas formas
+      <em>de hacerlo rendir.</em>
+    </h2>
+
+    <p>
+      Descubrí cómo puede adaptarse a la operación de tu empresa.
+    </p>
+
+    <div class="application-grid">
+
+      <button
+        class="application-card"
+        type="button"
+        data-application="Granos"
+      >
+        <img
+          src="../assets/images/constellation-25360-6x2/aplicacion-construccion.webp"
+          alt="Volkswagen Constellation 25.360 6×2 para construcción"
+        >
+
+        <div>
+          <div class="app-head">
+            <span
+              class="app-icon"
+              data-icon="field"
+            ></span>
+
+            <h3>Construcción</h3>
+          </div>
+
+          <p>
+            Robustez para obras, canteras y terrenos exigentes.
+          </p>
+
+          <b>
+            Consultar esta aplicación
+            <span>→</span>
+          </b>
+        </div>
+      </button>
+
+      <button
+        class="application-card"
+        type="button"
+        data-application="Áridos"
+      >
+        <img
+          src="../assets/images/constellation-25360-6x2/aplicacion-industria.webp"
+          alt="Volkswagen Constellation 25.360 6×2 para aplicaciones industriales"
+        >
+
+        <div>
+          <div class="app-head">
+            <span
+              class="app-icon"
+              data-icon="weight"
+            ></span>
+
+            <h3>Industria</h3>
+          </div>
+
+          <p>
+            Configuración adaptable a diferentes operaciones industriales.
+          </p>
+
+          <b>
+            Consultar esta aplicación
+            <span>→</span>
+          </b>
+        </div>
+      </button>
+
+      <button
+        class="application-card"
+        type="button"
+        data-application="Carga general"
+      >
+        <img
+          src="../assets/images/constellation-25360-6x2/aplicacion-carga-pesada.webp"
+          alt="Volkswagen Constellation 25.360 6×2 para transporte de carga pesada"
+        >
+
+        <div>
+          <div class="app-head">
+            <span
+              class="app-icon"
+              data-icon="box"
+            ></span>
+
+            <h3>Carga pesada</h3>
+          </div>
+
+          <p>
+            Capacidad y rendimiento para el transporte de grandes cargas.
+          </p>
+
+          <b>
+            Consultar esta aplicación
+            <span>→</span>
+          </b>
+        </div>
+      </button>
+
+    </div>
+
+    <!-- OTRAS APLICACIONES -->
+    <div class="application-other">
+
+      <div class="application-other-copy">
+
+        <span
+          class="application-other-icon"
+          aria-hidden="true"
+        >
+          +
+        </span>
+
+        <div>
+          <h3>¿Otra aplicación?</h3>
+
+          <p>
+            Contanos qué necesitás transportar y te ayudamos a encontrar
+            la configuración adecuada.
+          </p>
+        </div>
+
+      </div>
+
+      <a
+        class="button button-primary application-other-button"
+        href="#contacto"
+        data-track="cta_click"
+        data-location="other-application"
+      >
+        Consultar otra aplicación
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
 
     <section class="cabin-section" id="cabina">
 
@@ -498,57 +629,38 @@
           </select>
         </label>
 
-        <label>
-          <span>Aplicación</span>
-
-          <select
-            name="aplicacion"
-            id="form-application"
-          >
-            <option value="">
-              Aplicación
-            </option>
-
-            <option value="Carga pesada">
-              Carga pesada
-            </option>
-
-            <option value="Industria">
-              Industria
-            </option>
-
-            <option value="Construcción">
-              Construcción
-            </option>
-          </select>
-        </label>
+     
 
       </div>
 
       <label>
-        <span>Financiación de interés</span>
+  <span>Financiación de interés</span>
 
-        <select
-          name="financiacion"
-          id="form-finance"
-        >
-          <option value="">
-            Financiación de interés
-          </option>
+  <select
+    name="financiacion"
+    id="form-finance"
+  >
+    <option value="">
+      Financiación de interés
+    </option>
 
-          <option value="Financiación bancaria">
-            Financiación bancaria
-          </option>
+    <option value="Financiación bancaria">
+      Financiación bancaria
+    </option>
 
-          <option value="Financiación CORCAM">
-            Financiación CORCAM
-          </option>
+    <option value="Financiación CORCAM">
+      Financiación CORCAM
+    </option>
 
-          <option value="Leasing">
-            Leasing
-          </option>
-        </select>
-      </label>
+    <option value="Leasing">
+      Leasing
+    </option>
+
+    <option value="Otros">
+      Otros
+    </option>
+  </select>
+</label>
 
       <label>
         <span>¿Qué necesitás transportar?</span>

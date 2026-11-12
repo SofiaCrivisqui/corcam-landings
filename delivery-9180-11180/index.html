@@ -231,20 +231,160 @@
       <div class="trust-bar"><span><i data-icon="truck"></i>Entrega coordinada</span><span><i data-icon="tools"></i>Asesoramiento personalizado</span><span><i data-icon="shield"></i>Respaldo oficial</span></div>
     </section>
 
-    <section class="applications-section" id="aplicaciones"><div class="section-shell"><p class="eyebrow eyebrow-light">Aplicaciones</p><h2>Un camión.<br>Distintas formas <em>de hacerlo rendir.</em></h2><p>Descubrí cómo puede adaptarse a la operación de tu empresa.</p><div class="application-grid">
-          <button class="application-card" data-application="Bebidas">
-            <img src="../assets/images/general/app-beverages.webp" alt="Bebidas">
-            <div><div class="app-head"><span class="app-icon" data-icon="bottle"></span><h3>Bebidas</h3></div><p>Más entregas en menos tiempo.</p><b>Consultar esta aplicación <span>→</span></b></div>
-          </button>
-          <button class="application-card" data-application="Alimentos">
-            <img src="../assets/images/general/app-food.webp" alt="Alimentos">
-            <div><div class="app-head"><span class="app-icon" data-icon="snow"></span><h3>Alimentos</h3></div><p>Transporte seguro para la cadena de frío.</p><b>Consultar esta aplicación <span>→</span></b></div>
-          </button>
-          <button class="application-card" data-application="Paquetería">
-            <img src="../assets/images/general/app-parcels.webp" alt="Paquetería">
-            <div><div class="app-head"><span class="app-icon" data-icon="box"></span><h3>Paquetería</h3></div><p>Agilidad para tu operación logística.</p><b>Consultar esta aplicación <span>→</span></b></div>
-          </button>
-      </div></div></section>
+    <section
+  class="applications-section"
+  id="aplicaciones"
+>
+  <div class="section-shell">
+
+    <p class="eyebrow eyebrow-light">
+      Aplicaciones
+    </p>
+
+    <h2>
+      Un camión.<br>
+      Distintas formas
+      <em>de hacerlo rendir.</em>
+    </h2>
+
+    <p>
+      Descubrí cómo puede adaptarse a la operación de tu empresa.
+    </p>
+
+    <div class="application-grid">
+
+      <button
+        class="application-card"
+        type="button"
+        data-application="Bebidas"
+      >
+        <img
+          src="../assets/images/general/app-beverages.webp"
+          alt="Volkswagen Delivery para distribución de bebidas"
+        >
+
+        <div>
+          <div class="app-head">
+            <span
+              class="app-icon"
+              data-icon="bottle"
+            ></span>
+
+            <h3>Bebidas</h3>
+          </div>
+
+          <p>
+            Más entregas en menos tiempo.
+          </p>
+
+          <b>
+            Consultar esta aplicación
+            <span>→</span>
+          </b>
+        </div>
+      </button>
+
+      <button
+        class="application-card"
+        type="button"
+        data-application="Alimentos"
+      >
+        <img
+          src="../assets/images/general/app-food.webp"
+          alt="Volkswagen Delivery para distribución de alimentos"
+        >
+
+        <div>
+          <div class="app-head">
+            <span
+              class="app-icon"
+              data-icon="snow"
+            ></span>
+
+            <h3>Alimentos</h3>
+          </div>
+
+          <p>
+            Transporte seguro para la cadena de frío.
+          </p>
+
+          <b>
+            Consultar esta aplicación
+            <span>→</span>
+          </b>
+        </div>
+      </button>
+
+      <button
+        class="application-card"
+        type="button"
+        data-application="Paquetería"
+      >
+        <img
+          src="../assets/images/general/app-parcels.webp"
+          alt="Volkswagen Delivery para distribución de paquetería"
+        >
+
+        <div>
+          <div class="app-head">
+            <span
+              class="app-icon"
+              data-icon="box"
+            ></span>
+
+            <h3>Paquetería</h3>
+          </div>
+
+          <p>
+            Agilidad para tu operación logística.
+          </p>
+
+          <b>
+            Consultar esta aplicación
+            <span>→</span>
+          </b>
+        </div>
+      </button>
+
+    </div>
+
+    <!-- OTRAS APLICACIONES -->
+    <div class="application-other">
+
+      <div class="application-other-copy">
+
+        <span
+          class="application-other-icon"
+          aria-hidden="true"
+        >
+          +
+        </span>
+
+        <div>
+          <h3>¿Otra aplicación?</h3>
+
+          <p>
+            Contanos qué necesitás transportar y te ayudamos a encontrar
+            la configuración adecuada.
+          </p>
+        </div>
+
+      </div>
+
+      <a
+        class="button button-primary application-other-button"
+        href="#contacto"
+        data-track="cta_click"
+        data-location="other-application"
+      >
+        Consultar otra aplicación
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
 <section class="cabin-section" id="cabina">
 
   <div class="cabin-image cabin-video-block">
@@ -496,57 +636,36 @@
           </select>
         </label>
 
-        <label>
-          <span>Aplicación</span>
-
-          <select
-            name="aplicacion"
-            id="form-application"
-          >
-            <option value="">
-              Aplicación
-            </option>
-
-            <option value="Bebidas">
-              Bebidas
-            </option>
-
-            <option value="Alimentos">
-              Alimentos
-            </option>
-
-            <option value="Paquetería">
-              Paquetería
-            </option>
-          </select>
-        </label>
 
       </div>
+<label>
+  <span>Financiación de interés</span>
 
-      <label>
-        <span>Financiación de interés</span>
+  <select
+    name="financiacion"
+    id="form-finance"
+  >
+    <option value="">
+      Financiación de interés
+    </option>
 
-        <select
-          name="financiacion"
-          id="form-finance"
-        >
-          <option value="">
-            Financiación de interés
-          </option>
+    <option value="Financiación bancaria">
+      Financiación bancaria
+    </option>
 
-          <option>
-            Financiación bancaria
-          </option>
+    <option value="Financiación CORCAM">
+      Financiación CORCAM
+    </option>
 
-          <option>
-            Financiación CORCAM
-          </option>
+    <option value="Leasing">
+      Leasing
+    </option>
 
-          <option>
-            Leasing
-          </option>
-        </select>
-      </label>
+    <option value="Otros">
+      Otros
+    </option>
+  </select>
+</label>
 
       <label>
         <span>¿Qué necesitás transportar?</span>
